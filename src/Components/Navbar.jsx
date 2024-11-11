@@ -42,7 +42,7 @@ function Nav() {
                 <div className='pt-1'>
                   <FaCaretLeft/>
                 </div>
-               <Link to="#">Contact Us</Link>
+               <Link to="">Contact Us</Link>
                </div>
 
                 {/* Contact Information Popup */}

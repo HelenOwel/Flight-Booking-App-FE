@@ -3,7 +3,7 @@ import React from 'react'
 function Booking() {
   return (
     <div>
-        <div class='w-[1200px] mt-20 '>
+        <div class='w-[1200px] md:mt-20 mt-[-250px] '>
             <div className=' w-[60%] md:w-full '>
             <h1 className=' mx-3 md:mx-40 text-md'> <strong>User</strong> <span>please Login to book </span> <strong>Status:</strong> Registered</h1>
            <div className='flex  mx-3 md:mx-40 mt-3'>

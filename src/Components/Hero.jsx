@@ -31,13 +31,13 @@ function Hero() {
   }, []);
 
   return (
-    <div className="w-screen h-screen overflow-hidden relative">
-      <div className="absolute w-full flex justify-between bottom-[50%] items-center text-white px-4 z-10">
+    <div className="w-full h-[80vh] md:h-screen overflow-hidden relative">
+      <div className="absolute w-full flex justify-between items-center text-white px-4 z-10 top-[30%]  md:top-1/2  transform -translate-y-1/2">
         <div onClick={previousImage} className="bg-slate-900 p-2 rounded-full cursor-pointer">
-          <FaAngleLeft size={40} />
+          <FaAngleLeft size={30} className="md:text-4xl"/>
         </div>
         <div onClick={nextImage} className="bg-slate-900 p-2 rounded-full cursor-pointer">
-          <FaAngleRight size={40} />
+          <FaAngleRight size={30} className="md:text-4xl"/>
         </div>
       </div>
 
@@ -49,11 +49,11 @@ function Hero() {
         }}
       >
         {images.map((image) => (
-          <div key={image.id} className="flex-shrink-0 w-screen h-full">
+          <div key={image.id} className="flex-shrink-0 w-full h-full">
             <img
               src={image.image}
               alt={`Banner ${image.id}`}
-              className="w-full h-full object-fill "
+              className="w-full  md:h-screen h-72 object-contain md:object-cover"
             />
           </div>
         ))}

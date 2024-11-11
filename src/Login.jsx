@@ -40,7 +40,8 @@ const handleLogin = () => {
   return (
     <div>
         <Navbar/>
-        <div className=' w-full md:w-[1200px] mx-auto'>
+       <Link to='/login'>
+       <div className=' w-full md:w-[1200px] mx-auto'>
             <form ref={form} action="" className='pt-[200px]' onSubmit={handleLogin} >
                 <div className='border mx-3  md:mx-auto  md:w-[50%] px-4'>
                 <h1 className='text-3xl relative text-center'>MQ's Login</h1>
@@ -66,6 +67,7 @@ const handleLogin = () => {
                 </div>
             </form>
         </div>
+       </Link>
     </div>
   )
 }
