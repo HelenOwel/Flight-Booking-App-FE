@@ -53,7 +53,7 @@ function Hero() {
             <img
               src={image.image}
               alt={`Banner ${image.id}`}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-fill "
             />
           </div>
         ))}
