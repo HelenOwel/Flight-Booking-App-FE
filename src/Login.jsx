@@ -40,9 +40,9 @@ const handleLogin = () => {
   return (
     <div>
         <Navbar/>
-        <div className='w-[1200px] mx-auto'>
+        <div className=' w-full md:w-[1200px] mx-auto'>
             <form ref={form} action="" className='pt-[200px]' onSubmit={handleLogin} >
-                <div className='border mx-8  md:mx-auto  w-[50%] px-4'>
+                <div className='border mx-3  md:mx-auto  md:w-[50%] px-4'>
                 <h1 className='text-3xl relative text-center'>MQ's Login</h1>
                 <div className=' border-b md:left-[45%] font-bold border-green-800 md:w-[10%] absolute'></div>
                 <div className='mt-7 space-y-3'>
@@ -57,10 +57,10 @@ const handleLogin = () => {
                 </div>
 
                 <div className='flex justify-between '>
-               <p className='w-50% py-3 pt- '>  <Link to='/signUp' className='py-3 px-10 border mb-9 w-full bg-green-900 text-white rounded-md'>Or Sign Up</Link></p>
+               <p className='w-[50%] md:w-50% py-3 pt- '>  <Link to='/signUp' className='py-3 px-10 border mb-9 w-full bg-green-900 text-white rounded-md'>Or Sign Up</Link></p>
 
 
-                    <button className='text-center text-white bg-[#080A5F] w-[60%] md:w-[60%] py-3 mb-8  rounded-md ' onSubmit={handleLogin}>Login</button>
+                    <button className='text-center text-white bg-[#080A5F] w-[50%] md:w-[60%] py-3 mb-8  rounded-md ' onSubmit={handleLogin}>Login</button>
 
                 </div>
                 </div>

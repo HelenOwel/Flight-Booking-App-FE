@@ -26,8 +26,8 @@ function Hero() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextImage, 3000); // Change image every 3 seconds
-    return () => clearInterval(interval); // Clean up on unmount
+    const interval = setInterval(nextImage, 3000); 
+    return () => clearInterval(interval); 
   }, []);
 
   return (
